@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ll_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="基准点名" />
+
+                    <EditText
+                        android:id="@+id/ed_jzdm"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="基准高程" />
+
+                    <EditText
+                        android:id="@+id/ed_jzgc"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="仪器高" />
+
+                    <EditText
+                        android:id="@+id/ed_yqg"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="观测点点号" />
+
+                    <EditText
+                        android:id="@+id/ed_gcno"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                      />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="垂直角-盘左" />
+
+                    <EditText
+                        android:id="@+id/ed_czjleft"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="垂直角-盘右" />
+
+                    <EditText
+                        android:id="@+id/ed_czjright"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="棱镜高" />
+
+                    <EditText
+                        android:id="@+id/ed_ljg"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/edit_ll">
+
+                    <TextView
+                        style="@style/edit_title"
+                        android:text="平 距" />
+
+                    <EditText
+                        android:id="@+id/ed_pj"
+                        style="@style/edit_view_edit"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View style="@style/tab_w_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_save"
+            style="@style/bottom_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="保存" />
+
+        <View style="@style/tab_h_view" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            style="@style/bottom_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="退出" />
+    </LinearLayout>
+</LinearLayout>
