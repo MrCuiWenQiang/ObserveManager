@@ -68,4 +68,20 @@ public class DBUtil {
         return projects;
     }
 
+    public static void install(List<String> sqls) {
+        SQLiteDatabase db = Connector.getDatabase();
+        try {
+            db.beginTransaction();
+            for (String sql : sqls) {
+                db.execSQL(sql);
+            }
+            db.setTransactionSuccessful();
+        } catch (Exception e) {
+            ErrorUtil.showError(e);
+        } finally {
+            db.endTransaction();
+            db.close();
+        }
+    }
+
 }

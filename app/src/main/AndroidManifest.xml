@@ -65,6 +65,8 @@
         <activity android:name=".view.InstrumentInfoActivity"/>
         <activity android:name=".view.InstrumentActivity"/>
         <activity android:name=".view.InstrumentNowActivity"/>
+        <activity android:name=".view.CJTabActivity"/>
+        <activity android:name=".view.SYTabActivity"/>
     </application>
 
 </manifest>

@@ -105,6 +105,18 @@ public class MainActivity extends BaseMVPAcivity<MainContract.View, MainPresente
                 mPresenter.createProject(txt[0],txt[1],txt[2]);
             }
         });
+        findViewById(R.id.tv_cj).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toAcitvity(CJTabActivity.class);
+            }
+        });
+        findViewById(R.id.tv_sy).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toAcitvity(SYTabActivity.class);
+            }
+        });
     }
 
     @Override
